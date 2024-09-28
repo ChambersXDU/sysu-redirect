@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "sysu-redirect",
+  "version": "1.2",
+  "description": "将中山大学内网链接转换为外网可访问的链接",
+  "icons": {
+    "16": "duck_512.png",
+    "48": "duck_512.png",
+    "128": "duck_512.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "*://*.sysu.edu.cn/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
